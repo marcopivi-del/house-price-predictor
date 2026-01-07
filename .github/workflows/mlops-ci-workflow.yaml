@@ -73,6 +73,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: pivimarco/fastapi:{{github.sha}}
+          tags: pivimarco/fastapi:${{ github.sha }}
           context: "."
           file: "Dockerfile"    
