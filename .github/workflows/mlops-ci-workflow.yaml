@@ -1,12 +1,8 @@
 name: MLops criterion
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    workflow_dispatch: {}
+
 
 jobs:
   e2e_mplops_workflow:
